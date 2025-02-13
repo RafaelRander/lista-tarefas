@@ -20,12 +20,12 @@ fun WelcomeMessageComponent() {
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         Text(
-            text = "Olá Neymar!",
+            text = "Olá Usuário!",
             fontFamily = FontFamily(Font(R.font.nunito_extrabold)),
             fontSize = 22.sp
         )
         Text(
-            text = "2 tarefas para hoje",
+            text = "Tarefas do dia",
             fontFamily = FontFamily(Font(R.font.nunito_regular)),
             fontSize = 18.sp,
             color = Color.LightGray

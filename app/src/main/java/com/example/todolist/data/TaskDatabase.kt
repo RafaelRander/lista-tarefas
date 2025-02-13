@@ -13,7 +13,6 @@ abstract class TaskDatabase : RoomDatabase() {
 
     abstract val taskDao: TaskDao
 
-
 }
 
 object TaskDatabaseProvider {
