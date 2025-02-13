@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import kotlinx.serialization.Serializable
 
 @Serializable
-@Entity(tableName = "tasks") // Nome da tabela no banco de dados
+@Entity(tableName = "tasks")
 data class Task(
     @PrimaryKey(autoGenerate = true) val id: Long = 0, // Auto-gerado pelo Room
     val title: String,

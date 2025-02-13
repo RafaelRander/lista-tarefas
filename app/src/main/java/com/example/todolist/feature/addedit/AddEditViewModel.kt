@@ -53,5 +53,27 @@ class AddEditViewModel (
 
     }
 
+    /*
+    private fun save() {
+        viewModelScope.launch {
+            if (title.isBlank()) {
+                _uiEvent.send(UiEvent.ShowSnackbar("Title cannot be empty"))
+                return@launch
+            }
+
+            repository.insert(title, description)
+
+            // Verificando se a inserção ocorreu corretamente
+            repository.getAll().collect { tasks ->
+                tasks.forEach { task ->
+                    println("Tarefa salva: ID=${task.id}, Título=${task.title}, Descrição=${task.body}")
+                }
+            }
+
+            _uiEvent.send(UiEvent.NavigateBack)
+        }
+    }
+    */
+
 }
 

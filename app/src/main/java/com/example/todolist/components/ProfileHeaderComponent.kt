@@ -12,7 +12,7 @@ import androidx.compose.material.Badge
 import androidx.compose.material.BadgedBox
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.NotificationsNone
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,8 +34,8 @@ fun ProfileHeaderComponent() {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Image(
-            painter = painterResource(id = R.drawable.profile),
-            contentDescription = "Profile picture",
+            painter = painterResource(id = R.drawable.pessoa),
+            contentDescription = "Imagem Pessoa",
             modifier = Modifier
                 .size(30.dp)
                 .clip(CircleShape)
@@ -52,7 +52,7 @@ fun ProfileHeaderComponent() {
             modifier = Modifier.padding(end = 16.dp)
         ) {
             Icon(
-                imageVector = Icons.Filled.Notifications,
+                imageVector = Icons.Filled.NotificationsNone,
                 contentDescription = "Notifications"
             )
         }
